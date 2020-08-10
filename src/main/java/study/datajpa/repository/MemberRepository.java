@@ -48,7 +48,7 @@ public interface MemberRepository extends JpaRepository<Member, Long>, MemberRep
      int bulkAgePlus(@Param("age") int age);
 
 //   하단의 로직(패치 조인)은 56 번 Line > @EntityGraph 로 대체 될 수 있다.
-//   But, 53~54 line 의 방법이 영한님이 권장 하는 방법
+//   But, 52~53 line 의 방법이 영한님이 권장 하는 방법
      @Query("select m from Member m left join fetch m.team")
      List<Member> findMemberFetchJoin();
 

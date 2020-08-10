@@ -13,6 +13,13 @@ spring:
 #        show_sql: true
         format_sql: true
 
+#  Pageable 에서 default page 갯수 20개를 변경하는 방법 (globally)
+#  data:
+#    web:
+#      pageable:
+#        default-page-size: 10
+#        max-page-size: 2000
+
 logging.level:
   org.hibernate.SQL: debug
 #  org.hibernate.type: trace
